@@ -20,7 +20,6 @@ background-image: url(Rectangle.jpg);
 header {
     padding-top: 63px;
     margin-left:139px;
-    width: 1128px;
     display: flex;
     justify-content: space-between;
 }
