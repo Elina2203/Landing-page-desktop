@@ -132,9 +132,14 @@ body {
     color: #3c4858;
   }
   
-  p {
+  .features-h2 p {
     margin: 0;
+    font-size: 17.5px;
+    line-height: 21px;
     text-align: center;
+    color: #999999;
+    
+
   }
   
   .feature-1 {
@@ -355,9 +360,7 @@ body {
     .footer-menu {
       padding-bottom: 31px;
     }
-    .field-white {
-        width:100%;
-    }
+  
     .made-by {
       align-self: center;
     }
