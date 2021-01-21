@@ -5,10 +5,12 @@ body {
     padding: 0;
     background: #cccccc;
     background-image: url(Rectangle.jpg);
-    background-size: inherit;
+    background-size: auto;
     background-repeat: no-repeat;
     min-height: 100%;
+    position: relative;
     max-width:1440px;
+
   }
   
   header {
@@ -17,11 +19,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    margin: auto;
+   
   }
   
   /*Стилизация logo */
   header a {
     font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
     color: #ffffff;
     text-decoration: none;
     display: space-between;
@@ -31,7 +37,7 @@ body {
   
   /*контейнер с ссылками и img*/
   nav.top-menu {
-    margin-right: 24px;
+   
     font-size: 12px;
     line-height: 14px;
     color: #ffffff;
@@ -53,7 +59,7 @@ body {
     padding-top: 120px;
     padding-left: 75px;
     color: #ffffff;
-    margin-bottom: 124px;
+ 
   }
   
   /*заголовок в контейнере с текстом*/
@@ -66,6 +72,7 @@ body {
     line-height: 24px;
     margin: 0 auto;
     padding-bottom: 42px;
+    text-align: left;
   }
   /*Кнопка с ссылкой на видео*/
   .top-text a {
@@ -100,29 +107,20 @@ body {
   }
 /*Белое поле*/
   .field-white {
-    margin:auto 26px auto 31px;
-    max-width: 1380px;
+    padding: 88px 122px 87px 125px;
     min-height: 2045px;
     background: #ffffff;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2), 0px 2px 24px rgba(0, 0, 0, 0.14);
     border-radius: 6px;
-    position: relative;
-  }
+    box-sizing: border-box;
+    margin:100px 29px auto 29px;
   
-  .part-features {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 95px 134px 200px 134px;
-    column-gap: 23px;
   }
-  .features-h2 {
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: center;
-    padding-bottom: 161px;
-  }
-  
+.main-part {
+max-width:1121px;
+}
+
+
   h2 {
     font-family: Roboto;
     font-style: normal;
@@ -130,35 +128,47 @@ body {
     font-size: 36.4px;
     line-height: 43px;
     color: #3c4858;
-  }
-  
-  .features-h2 p {
-    margin: 0;
-    font-size: 17.5px;
-    line-height: 21px;
     text-align: center;
-    color: #999999;
-    
+    margin:0;
+  }
 
+  .part-features {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    padding: 95px auto 200px;
+    column-gap: 66px;
+    text-align: center;
+   
+  }
+  .features-1 {
+      text-align:center;
+  }
+  .features-1 p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+color: #999999;  
+  }
+  .features-h2 {
+    grid-row-start: 1;
+    grid-column: 1/4;
+    padding-bottom: 161px;
+    max-width:723px;
+   margin: auto;
+  
+  }
+  .features-h2 p {
+font-style: normal;
+font-weight: 300;
+font-size: 17.5px;
+line-height: 21px;
+text-align: center;
+color: #999999;
   }
   
-  .feature-1 {
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  
-  .feature-2 {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-  
-  .feature-3 {
-    grid-row-start: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
-  }
   
   h3 {
     font-family: Roboto;
@@ -174,36 +184,20 @@ body {
   .team {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 125px;
-    padding-right: 122px;
     column-gap: 38px;
     text-align: center;
     margin: auto;
+    margin-bottom:185px;
+    padding-top:208px;
   }
+
   .team-h2 {
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 4;
-    text-align: center;
     padding-bottom: 81px;
   }
-  .team-1 {
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  
-  .team-2 {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-  
-  .team-3 {
-    grid-row-start: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
-  }
+
   .avatar-name {
     font-size: 18.2px;
     line-height: 21px;
@@ -216,10 +210,23 @@ body {
     color: #777777;
     margin-bottom: 35px;
   }
-  
-  .part-features img {
-    margin-left: 43%;
+  .team  p .avatar-profession{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;  
   }
+.avatar-descr{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+      
+}
   .social-icons {
     padding-top: 36px;
     text-align: center;
@@ -231,33 +238,29 @@ body {
   }
   /*Контейнер с инпут полями*/
   .input-forma {
-    margin: 185px 312px 87px 315px;
-    width:753px;
+    margin: auto;
+    padding:auto;
+    max-width:753px;
   }
-  
-  .forma-h2-p {
-    margin: auto 5px 36px 5px;
-  }
-  /*Описание заголовка в инпут контейнере*/
-  .input-forma h2 {
-    text-align: center;
-    font-size: 36.4px;
-    color: #3c4858;
-  }
+
+ 
+ 
   /*Описание параграфа в инпут контейнере*/
   .input-forma p {
     text-align: center;
     font-size: 18.2px;
     color: #999999;
+    max-width:753px;
+    margin: auto;
+    padding-top:36px;
   }
   
-  form {
-    margin-right: 25px;
-  }
+ 
   
   .input-field-x {
     display: flex;
-    justify-items: space-between;
+   justify-content: center;
+    padding-top: 36px;
   }
   
   form input::placeholder {
@@ -269,12 +272,10 @@ body {
     border: none;
     border-bottom: 1px solid #d2d2d2;
     width: 361px;
-    padding-bottom: 11px;
+    padding: 0 0 11px 0;
     outline: none;
   }
-  #name {
-    margin-right: 29px;
-  }
+
   .input-field-1 input:focus {
     border-bottom: 1px solid #9c27b0;
   }
@@ -284,6 +285,8 @@ body {
     bottom: 48px;
     color: #9c27b0;
     opacity: 0;
+    font-size:10px;
+
   }
   
   .input-field-1 input:not([value=""]) ~ span {
@@ -295,8 +298,9 @@ body {
     border: none;
     border-bottom: 1px solid #d2d2d2;
   }
-  
-  #msg {
+ 
+
+  .input-field-1 #msg {
     width: 751px;
     height: 80px;
   }
@@ -325,13 +329,16 @@ body {
     max-width: 1122px;
     display: flex;
     justify-content: space-between;
+    align-content: center;
     padding: 23px 24px;
+    margin: auto;
   }
   
   .footer-menu nav a {
     display: inherit;
     flex-direction: row;
     align-items: space-between;
+   
   }
 
   .footer-menu a {
@@ -339,10 +346,9 @@ body {
     padding-right: 33px;
     color: #333333;
     text-decoration: none;
+    
   }
-  .footer-menu {
-    padding-bottom: 31px;
-  }
+ 
   
   .made-by {
     align-self: center;
@@ -353,7 +359,10 @@ body {
     header {
       background: rgba(0, 0, 0, 0.4);
     }
-  
+    .field-white {
+        padding: 80px 0;
+   
+    }
     footer {
       flex-direction: column;
     }
@@ -370,7 +379,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-items: space-between;
-
+    margin:auto;
+  }
+    .top-text {
+    
+      padding-left: 15px;
   }
   .team {
     display: flex;
@@ -392,13 +405,13 @@ body {
     display:block;
 
 }
-#msg {
-    width: 716px;
+.input-field-1  #msg {
+    max-width: 716px;
     height: 80px;
   }
 
   }
-  @media only screen and (max-width: 560px) {
+  @media only screen and (max-width: 690px) {
     .dropdown {
       display: initial;
     }
@@ -416,7 +429,13 @@ body {
       padding: 0.5em;
       font-size: 75%;
     }
-  
+    .input-field-1 input {
+        width:560px;
+  }  
+
+ .input-field-1 #msg {
+    width: 560px;
+ }
     .dropdown:focus + nav {
       display: flex;
     }
@@ -431,4 +450,14 @@ body {
     nav.footer-menu a {
       justify-items: center;
     }
+    .input-field-1 input {
+        width:378px;
   }  
+ .input-field-1 #msg {
+    width: 378px;
+    
+  }
+
+
+
+}
