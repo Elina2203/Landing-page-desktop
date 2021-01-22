@@ -20,9 +20,9 @@
             
              <nav class="top-menu">
               
-               <a href="#components">Components</a>
+               <a href="#components">COMPONENTS</a>
                <a href="#components"><img src="download-icon.png" alt="download">
-                 Download</a>
+                 DOWNLOAD</a>
                
                <a href="twitter">
                 <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,19 +47,19 @@
                  <p>
                    Every landing page needs a small description after the big bold title,<br> that's why we added this text here. Add here all the information that<br> can make you or your product create the first impression.
                 </p>
-                <a href= "https://www.youtube.com/watch?v=XbnAKjjlgc4"><img src="icon-play.png" alt="play-video">WATCH VIDEO</a>
+               <div><a href= "https://www.youtube.com/watch?v=XbnAKjjlgc4"><img src="icon-play.png" alt="play-video">WATCH VIDEO</a></div>
               </div>
                   <!--Белый контейнер-->
            <div class="field-white">  
              <div class="main-part">
                 <!--Grid контейнер с features-->
-               <div class="part-features">
+               
 
                     <div class="features-h2">
                       <h2>Let’s talk product</h2>
                        <p>This is the paragraph where you can write more details about your product. Keep you user<br> engaged by providing meaningful information. Remember that by this time, the user is curious,otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</p>
                     </div>
-
+                    <div class="part-features">
                      <div class="features-1">
                        <img src="first.png">
                        <h3>First Feature</h3>
@@ -79,18 +79,18 @@
                      </div>
                     </div>
                      <!--Grid контейнер с team-->
-                    <div class="team">
+                    
 
                       <div class="team-h2">
                        <h2>Here is our team</h2>
                       </div>
                     
-                    
+                      <div class="team">
                       <div class="team-1">
                         <img src="AVATAR-2.png" alt="avatar-2">
                         <p class="avatar-name">Gigi Hadid</p>
                         <p class="avatar-profession">Model</p>
-                        <p class="avatar-descr">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some links for people to be able to follow them outside the site.</p>
+                        <p class="avatar-descr">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a class="link" href="">links</a> for people to be able to follow them outside the site.</p>
                        <div class="social-icons">
 
                         <a href="#twitter">
@@ -112,7 +112,7 @@
                       <img src="AVATAR-1.png" alt="avatar-1">
                         <p class="avatar-name">Christian Louboutin</p>
                         <p class="avatar-profession">Designer</p>
-                        <p class="avatar-descr">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some links for people to be able to follow them outside the site.</p> 
+                        <p class="avatar-descr">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a class="link" href="">links</a> for people to be able to follow them outside the site.</p> 
                         <div class="social-icons">
                         <a href="#twitter">
                           <img src="ICON TWITTER.png" alt="twitter">
@@ -127,7 +127,7 @@
                         <img src="AVATAR.png" alt="avatar">
                         <p class="avatar-name">Gigi Hadid</p>
                         <p class="avatar-profession">Model</p>
-                        <p class="avatar-descr">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some links for people to be able to follow them outside the site.</p>  
+                        <p class="avatar-descr">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a class="link" href="">links</a> for people to be able to follow them outside the site.</p>  
                         <div class="social-icons">
                         <a href="#google">
                           <img src="ICON GOOGLE+.png" alt="google">
@@ -198,6 +198,14 @@
                               
                             </div>
                      
-                        </footer>               
+                        </footer>    
+                        <script>
+                          document
+                          .querySelector(".dropdown")
+                          .addEventListener("click", function() {
+                          document.querySelector(".top-menu").classList.toggle("active");
+                          });
+                        </script>           
 </body>
 </html>
+

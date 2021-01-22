@@ -1,463 +1,390 @@
 body {
-    /* background-color:#E5E5E5;*/
-    font-family: Roboto;
-    margin: 0;
-    padding: 0;
-    background: #cccccc;
-    background-image: url(Rectangle.jpg);
-    background-size: auto;
-    background-repeat: no-repeat;
-    min-height: 100%;
-    position: relative;
-    max-width:1440px;
+  background-color: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #cccccc;
+  background-image: url(Rectangle.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+header {
+  max-width: 1128px;
+  padding: 23px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: auto;
+}
+/*Стилизация logo */
+header a {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  display: space-between;
+  padding-left: 24px;
+}
+/*контейнер с ссылками и img*/
 
-  }
-  
-  header {
-    max-width: 1128px;
-    padding: 23px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    margin: auto;
-   
-  }
-  
-  /*Стилизация logo */
-  header a {
-    font-size: 18px;
-    font-weight: 300;
-    font-style: normal;
-    color: #ffffff;
-    text-decoration: none;
-    display: space-between;
-    padding-left: 24px;
-    align-content: center;
-  }
-  
-  /*контейнер с ссылками и img*/
-  nav.top-menu {
-   
-    font-size: 12px;
-    line-height: 14px;
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  nav.top-menu a {
-    justify-content: space-between;
-    padding-right: 24px;
-  }
-  
-  .top-menu img {
-    vertical-align: middle;
-    padding-bottom: 5px;
-  }
-  
-  /*контейнер с текстом внутри контейнера с фотографией*/
-  .top-text {
-    padding-top: 120px;
-    padding-left: 75px;
-    color: #ffffff;
- 
-  }
-  
-  /*заголовок в контейнере с текстом*/
-  h1 {
-    font-size: 53.2px;
-  }
-  /*параграф в контейнере с текстом*/
-  .top-text p {
-    font-size: 18.2px;
-    line-height: 24px;
-    margin: 0 auto;
-    padding-bottom: 42px;
-    text-align: left;
-  }
-  /*Кнопка с ссылкой на видео*/
-  .top-text a {
-    margin-top: 42px;
-    color: #ffffff;
-    background: #f44336;
-    box-shadow: 0px 2px 2px rgba(244, 67, 54, 0.14);
-    border-radius: 3px;
-    font-size: 14px;
-  
-    width: 179px;
-    height: 54px;
-    border: none;
-    text-decoration: none;
-    padding: 19px 34px 17px 36px;
-  }
-  
-  .top-text a img {
-    vertical-align: middle;
-    padding-right: 3px;
-  }
-  .dropdown {
-    display: none;
-  }
-  /*активные состояния кнопки с ссылкой на видео*/
-  .top-text a:hover {
-    background: #f72819;
-  }
-  
-  .top-text a:active {
-    background: #9c0b01;
-  }
+nav.top-menu a {
+  font-size: 12px;
+  line-height: 14px;
+  justify-content: space-between;
+  padding-right: 24px;
+  vertical-align: middle;
+}
+.top-menu img {
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+/*контейнер с текстом внутри контейнера с фотографией*/
+.top-text {
+  padding-top: 120px;
+  padding-left: 75px;
+  color: #ffffff;
+}
+/*заголовок в контейнере с текстом*/
+h1 {
+  font-weight: 500;
+  font-size: 53.2px;
+  line-height: 62px;
+}
+/*параграф в контейнере с текстом*/
+.top-text p {
+  font-weight: 400;
+  font-size: 18.2px;
+  line-height: 21px;
+  padding-bottom: 42px;
+}
+/*Кнопка с ссылкой на видео*/
+
+.top-text a {
+  color: #ffffff;
+  background: #f44336;
+  box-shadow: 0px 2px 2px rgba(244, 67, 54, 0.14);
+  border-radius: 3px;
+  font-size: 14px;
+  border: none;
+  text-decoration: none;
+  padding: 19px 34px 17px 36px;
+}
+.top-text a img {
+  vertical-align: middle;
+  padding-right: 3px;
+}
+.dropdown {
+  display: none;
+}
+/*активные состояния кнопки с ссылкой на видео*/
+.top-text a:hover {
+  background: #f72819;
+}
+.top-text a:active {
+  background: #9c0b01;
+}
 /*Белое поле*/
+.field-white {
+  padding: 88px 122px 87px 125px;
+  min-height: 2045px;
+  background: #ffffff;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2), 0px 2px 24px rgba(0, 0, 0, 0.14);
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin: 100px 29px auto;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36.4px;
+  line-height: 43px;
+  color: #3c4858;
+  text-align: center;
+}
+
+.part-features {
+  display: flex;
+  flex-direction: row;
+  margin-top: 123.5px;
+  margin-bottom: 208px;
+  column-gap: 66px;
+}
+.features-1 {
+  max-width: 328px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #999999;
+}
+.features-h2 {
+  margin-bottom: 38px;
+}
+.features-h2 p {
+  font-weight: 300;
+  font-size: 17.5px;
+  line-height: 21px;
+  text-align: center;
+  color: #999999;
+}
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #3c4858;
+}
+
+/*Grid контейнер с team*/
+.team {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  vertical-align: center;
+  margin: auto;
+  margin-bottom: 185px;
+  padding-top: 86px;
+  column-gap: 39px;
+}
+
+.avatar-name {
+  font-size: 18.2px;
+  line-height: 21px;
+  color: #3c4858;
+  margin-bottom: 7px;
+}
+.avatar-profession {
+  font-size: 13.65px;
+  line-height: 16px;
+  color: #777777;
+  margin-bottom: 35px;
+}
+.team p .avatar-profession {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #999999;
+}
+.avatar-descr {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #999999;
+}
+
+.link {
+  color: #9c27b0;
+  text-decoration: none;
+}
+
+.social-icons {
+  padding-top: 36px;
+  text-align: center;
+}
+.social-icons a {
+  text-decoration: none;
+  padding-right: 10px;
+}
+/*Контейнер с инпут полями*/
+.input-forma {
+  margin: auto;
+  padding: auto;
+  max-width: 753px;
+}
+
+/*Описание параграфа в инпут контейнере*/
+.input-forma p {
+  text-align: center;
+  font-size: 18.2px;
+  color: #999999;
+  margin: auto;
+  padding-top: 36px;
+}
+.input-field-x {
+  display: flex;
+  justify-content: center;
+  padding-top: 36px;
+}
+form input::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+}
+/*Описание input c именем в инпут контейнере*/
+.input-field-1 input {
+  border: none;
+  border-bottom: 1px solid #d2d2d2;
+  width: 361px;
+  padding: 0 0 11px;
+  outline: none;
+}
+
+.input-field-1 input:focus {
+  border-bottom: 1px solid #9c27b0;
+}
+.input-field-1 span {
+  position: relative;
+  bottom: 48px;
+  color: #9c27b0;
+  opacity: 0;
+  font-size: 10px;
+}
+.input-field-1 input:not([value=""]) ~ span {
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+.input-field-2 input {
+  border: none;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.input-field-1 #msg {
+  width: 751px;
+  height: 80px;
+}
+.input-message {
+  text-align: center;
+}
+.btn-send-message {
+  width: 148px;
+  height: 41px;
+  background: #9c27b0;
+  box-shadow: 0px 2px 2px rgba(156, 39, 176, 0.2);
+  border-radius: 3px;
+  border: none;
+  margin: 25px auto;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+}
+.btn-send-message:focus {
+  outline: none;
+  border-color: white;
+}
+footer {
+  padding-left: 153px;
+  max-width: 1122px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 23px 24px;
+  margin: auto;
+}
+.footer-menu nav a {
+  display: inherit;
+  flex-direction: row;
+  align-items: space-between;
+}
+
+.footer-menu a {
+  font-size: 12px;
+  padding-right: 33px;
+  color: #333333;
+  text-decoration: none;
+}
+.made-by {
+  align-self: center;
+}
+@media only screen and (max-width: 964px) {
+  header {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
   .field-white {
-    padding: 88px 122px 87px 125px;
-    min-height: 2045px;
-    background: #ffffff;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2), 0px 2px 24px rgba(0, 0, 0, 0.14);
-    border-radius: 6px;
-    box-sizing: border-box;
-    margin:100px 29px auto 29px;
-  
+    padding: 80px 19px;
   }
-.main-part {
-max-width:1121px;
-}
-
-
-  h2 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36.4px;
-    line-height: 43px;
-    color: #3c4858;
-    text-align: center;
-    margin:0;
-  }
-
-  .part-features {
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    padding: 95px auto 200px;
-    column-gap: 66px;
-    text-align: center;
-   
-  }
-  .features-1 {
-      text-align:center;
-  }
-  .features-1 p {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-
-color: #999999;  
-  }
-  .features-h2 {
-    grid-row-start: 1;
-    grid-column: 1/4;
-    padding-bottom: 161px;
-    max-width:723px;
-   margin: auto;
-  
-  }
-  .features-h2 p {
-font-style: normal;
-font-weight: 300;
-font-size: 17.5px;
-line-height: 21px;
-text-align: center;
-color: #999999;
-  }
-  
-  
-  h3 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #3c4858;
-  }
-  
-  /*Grid контейнер с team*/
-  .team {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 38px;
-    text-align: center;
-    margin: auto;
-    margin-bottom:185px;
-    padding-top:208px;
-  }
-
-  .team-h2 {
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    padding-bottom: 81px;
-  }
-
-  .avatar-name {
-    font-size: 18.2px;
-    line-height: 21px;
-    color: #3c4858;
-    margin-bottom: 7px;
-  }
-  .avatar-profession {
-    font-size: 13.65px;
-    line-height: 16px;
-    color: #777777;
-    margin-bottom: 35px;
-  }
-  .team  p .avatar-profession{
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #999999;  
-  }
-.avatar-descr{
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #999999;
-      
-}
-  .social-icons {
-    padding-top: 36px;
-    text-align: center;
-  }
-  
-  .social-icons a {
-    text-decoration: none;
-    padding-right: 10px;
-  }
-  /*Контейнер с инпут полями*/
-  .input-forma {
-    margin: auto;
-    padding:auto;
-    max-width:753px;
-  }
-
- 
- 
-  /*Описание параграфа в инпут контейнере*/
-  .input-forma p {
-    text-align: center;
-    font-size: 18.2px;
-    color: #999999;
-    max-width:753px;
-    margin: auto;
-    padding-top:36px;
-  }
-  
- 
-  
-  .input-field-x {
-    display: flex;
-   justify-content: center;
-    padding-top: 36px;
-  }
-  
-  form input::placeholder {
-    font-size: 14px;
-    line-height: 16px;
-  }
-  /*Описание input c именем в инпут контейнере*/
-  .input-field-1 input {
-    border: none;
-    border-bottom: 1px solid #d2d2d2;
-    width: 361px;
-    padding: 0 0 11px 0;
-    outline: none;
-  }
-
-  .input-field-1 input:focus {
-    border-bottom: 1px solid #9c27b0;
-  }
-  
-  .input-field-1 span {
-    position: relative;
-    bottom: 48px;
-    color: #9c27b0;
-    opacity: 0;
-    font-size:10px;
-
-  }
-  
-  .input-field-1 input:not([value=""]) ~ span {
-    transition: opacity 0.3s;
-    opacity: 1;
-  }
-  
-  .input-field-2 input {
-    border: none;
-    border-bottom: 1px solid #d2d2d2;
-  }
- 
-
-  .input-field-1 #msg {
-    width: 751px;
-    height: 80px;
-  }
-  
-  .btn-send-message {
-    width: 148px;
-    height: 41px;
-    background: #9c27b0;
-    box-shadow: 0px 2px 2px rgba(156, 39, 176, 0.2);
-    border-radius: 3px;
-    border: none;
-    margin-top: 25px;
-    margin: 25px 50% 25px 50%;
-    color: #ffffff;
-    font-size: 12px;
-  }
-  
-  .btn-send-message:focus {
-    outline: none;
-    border-color: white;
-  }
-  
   footer {
-      
-    padding-left: 153px;
-    max-width: 1122px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 23px 24px;
-    margin: auto;
+    flex-direction: column;
   }
-  
-  .footer-menu nav a {
-    display: inherit;
-    flex-direction: row;
-    align-items: space-between;
-   
+  .footer-menu {
+    padding-bottom: 31px;
   }
-
-  .footer-menu a {
-    font-size: 12px;
-    padding-right: 33px;
-    color: #333333;
-    text-decoration: none;
-    
-  }
- 
-  
   .made-by {
     align-self: center;
   }
- 
-  @media only screen and (max-width: 786px) {
-
-    header {
-      background: rgba(0, 0, 0, 0.4);
-    }
-    .field-white {
-        padding: 80px 0;
-   
-    }
-    footer {
-      flex-direction: column;
-    }
-    .footer-menu {
-      padding-bottom: 31px;
-    }
-  
-    .made-by {
-      align-self: center;
-    }
-  
   .part-features {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: space-between;
-    margin:auto;
   }
-    .top-text {
-    
-      padding-left: 15px;
+  .top-text {
+    padding-left: 15px;
   }
   .team {
     display: flex;
     flex-direction: column;
     justify-items: space-between;
   }
-  
-  .part-features p{
-      margin-bottom: 110px;
+  .part-features p {
+    margin-bottom: 110px;
   }
-  .input-forma {
-    margin: 185px 5px 82px 5px;
-  }
-  .input-field-1 input {
-      width:716px;
-      margin-bottom: 40px;
-}
-.input-field-x{
-    display:block;
 
-}
-.input-field-1  #msg {
-    max-width: 716px;
+  .input-field-1 input {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .input-field-1 #msg {
+    width: 100%;
+  }
+  .input-field-x {
+    display: block;
+  }
+  .input-field-1 #msg {
     height: 80px;
   }
-
-  }
-  @media only screen and (max-width: 690px) {
-    .dropdown {
-      display: initial;
-    }
-
-    nav.top-menu {
-      display: flex;
-      display: none;
-      align-items: center;
-      position: absolute;
-      top: 6em;
-      right: 0;
-      background: rgba(0, 0, 0, 0.1);
-      flex-direction: row;
-      text-align: right;
-      padding: 0.5em;
-      font-size: 75%;
-    }
-    .input-field-1 input {
-        width:560px;
-  }  
-
- .input-field-1 #msg {
-    width: 560px;
- }
-    .dropdown:focus + nav {
-      display: flex;
-    }
-  }
-  
-  @media only screen and (max-width: 476px) {
-    nav.footer-menu {
-      display: flex;
-      flex-direction: row;
-      justify-items: left;
-    }
-    nav.footer-menu a {
-      justify-items: center;
-    }
-    .input-field-1 input {
-        width:378px;
-  }  
- .input-field-1 #msg {
-    width: 378px;
-    
+}
+@media only screen and (max-width: 690px) {
+  .dropdown {
+    display: initial;
   }
 
+  nav.top-menu {
+    display: flex;
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 6em;
+    right: 0;
+    background: rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    text-align: right;
+    padding: 0.5em;
+    font-size: 75%;
+  }
 
-
+  .input-field-1 input {
+    width: 100%;
+  }
+  .input-field-1 #msg {
+    width: 100%;
+  }
+  nav.top-menu.active {
+    display: flex;
+  }
+  .field-white {
+    margin-top: 59px;
+  }
+}
+@media only screen and (max-width: 476px) {
+  nav.top-menu a {
+    font-size: 25%;
+  }
+  nav.footer-menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .field-white {
+    margin-top: 40px;
+  }
+  nav.footer-menu {
+    justify-content: center;
+    padding-right: 0;
+  }
 }
