@@ -4,13 +4,15 @@ body {
   margin: 0;
   padding: 0;
   background: #cccccc;
+}
+.wraper {
   background-image: url(Rectangle.jpg);
   background-size: auto;
   background-repeat: no-repeat;
   position: relative;
+  max-width: 1440px;
 }
 header {
-  max-width: 1128px;
   padding: 23px 24px;
   display: flex;
   justify-content: space-between;
@@ -71,6 +73,7 @@ h1 {
   text-decoration: none;
   padding: 19px 34px 17px 36px;
 }
+
 .top-text a img {
   vertical-align: middle;
   padding-right: 3px;
@@ -109,7 +112,7 @@ h2 {
   display: flex;
   flex-direction: row;
   margin-top: 123.5px;
-  margin-bottom: 208px;
+  margin-bottom: 150px;
   column-gap: 66px;
 }
 .features-1 {
@@ -142,15 +145,18 @@ h3 {
 /*Grid контейнер с team*/
 .team {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
-  vertical-align: center;
   margin: auto;
   margin-bottom: 185px;
   padding-top: 86px;
   column-gap: 39px;
+  row-gap: 50px;
 }
-
+.team > div {
+  max-width: 350px;
+}
 .avatar-name {
   font-size: 18.2px;
   line-height: 21px;
@@ -186,7 +192,7 @@ h3 {
 }
 
 .social-icons {
-  padding-top: 36px;
+  padding-top: 10px;
   text-align: center;
 }
 .social-icons a {
@@ -212,6 +218,7 @@ h3 {
   display: flex;
   justify-content: center;
   padding-top: 36px;
+  column-gap: 20px;
 }
 form input::placeholder {
   font-size: 14px;
@@ -269,12 +276,11 @@ form input::placeholder {
   border-color: white;
 }
 footer {
-  padding-left: 153px;
-  max-width: 1122px;
   display: flex;
+  max-width: 1122px;
   justify-content: space-between;
   align-content: center;
-  padding: 23px 24px;
+  padding: 23px 35px;
   margin: auto;
 }
 .footer-menu nav a {
@@ -305,6 +311,7 @@ footer {
   }
   .footer-menu {
     padding-bottom: 31px;
+    margin: auto;
   }
   .made-by {
     align-self: center;
@@ -317,11 +324,7 @@ footer {
   .top-text {
     padding-left: 15px;
   }
-  .team {
-    display: flex;
-    flex-direction: column;
-    justify-items: space-between;
-  }
+
   .part-features p {
     margin-bottom: 110px;
   }
