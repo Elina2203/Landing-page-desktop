@@ -89,7 +89,7 @@ h1 {
   background: #9c0b01;
 }
 /*Белое поле*/
-.field-white {
+.container {
   padding: 88px 122px 87px 125px;
   min-height: 2045px;
   background: #ffffff;
@@ -303,7 +303,7 @@ footer {
     background: rgba(0, 0, 0, 0.4);
   }
 
-  .field-white {
+  .container {
     padding: 80px 19px;
   }
   footer {
@@ -371,7 +371,7 @@ footer {
   nav.top-menu.active {
     display: flex;
   }
-  .field-white {
+  .container {
     margin-top: 59px;
   }
 }
@@ -383,7 +383,7 @@ footer {
     display: flex;
     flex-direction: row;
   }
-  .field-white {
+  .container {
     margin-top: 40px;
   }
   nav.footer-menu {
